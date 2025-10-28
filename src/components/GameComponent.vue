@@ -122,8 +122,9 @@ onUnmounted(() => {
   background: white;
   border-radius: 12px;
   padding: 20px;
-  margin-bottom: 30px;
+  margin: 15px 15px 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
 }
 
 .game-info {
@@ -271,6 +272,7 @@ onUnmounted(() => {
   align-items: center;
   justify-content: center;
   min-height: 60vh;
+  margin: 15px
 }
 
 .results-card {
@@ -351,6 +353,7 @@ onUnmounted(() => {
 @media (max-width: 768px) {
   .game-content {
     padding: 20px;
+    margin: 15px;
   }
   
   .pattern-item {

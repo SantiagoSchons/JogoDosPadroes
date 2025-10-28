@@ -248,14 +248,18 @@ export const useGameStore = defineStore('game', () => {
     const audioContext = new (window.AudioContext || window.webkitAudioContext)()
     const oscillator = audioContext.createOscillator()
     const gainNode = audioContext.createGain()
-    
+    const audioAcerto = new Audio("/audio/acerto.wav");
+    const audioErro = new Audio("/audio/erro.wav");
+
     oscillator.connect(gainNode)
     gainNode.connect(audioContext.destination)
     
     if (type === 'correct') {
-      oscillator.frequency.value = 800
+      //oscillator.frequency.value = 800
+      audioAcerto.play()
     } else {
-      oscillator.frequency.value = 300
+      //oscillator.frequency.value = 500
+      audioErro.play()
     }
     
     gainNode.gain.value = 0.1

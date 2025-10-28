@@ -54,6 +54,7 @@
 
 .hero-content {
   max-width: 600px;
+  margin: 0 15px 0 15px;
 }
 
 .hero-title {
@@ -96,6 +97,7 @@
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  margin: 0 15px 0 15px
 }
 
 .feature-card:hover {
