@@ -11,9 +11,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'Portfolio',
-        short_name: 'Portfolio',
-        description: 'Conheça nosso portfólio',
+        name: 'JogoDosPadroes',
+        short_name: 'JogoDosPadroes',
+        description: 'Conheça nosso jogo dos padroes',
         theme_color: '#ffffff',
         icons: [
           {
